@@ -74,7 +74,6 @@ public class Studentdetails {
 
         }
 
-        // DELETE
         if (choice == 4) {
 
             System.out.print("Enter ID to Delete: ");
