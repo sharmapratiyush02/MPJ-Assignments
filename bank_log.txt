@@ -1,0 +1,5 @@
+CREATED | ID:1 | Name:Pratiyush | Amount:Rs.2000.0
+CREATED | ID:2 | Name:Adit | Amount:Rs.1500.0
+DEPOSIT | ID:1 | Deposited:Rs.500.0 | Balance:Rs.2500.0
+WITHDRAW | ID:1 | Withdrawn:Rs.200.0 | Balance:Rs.2300.0
+DELETED | ID:2
