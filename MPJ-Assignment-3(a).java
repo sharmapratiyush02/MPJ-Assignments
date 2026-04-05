@@ -2,6 +2,26 @@ import java.util.Scanner;
 
 class Shapes {
 
+    double side, length, breadth, base, height, radius;
+
+    Shapes(double side) {
+        this.side = side;
+    }
+
+    Shapes(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    Shapes(double base, double height, boolean isTriangle) {
+        this.base   = base;
+        this.height = height;
+    }
+
+    Shapes(double radius, boolean isCircle) {
+        this.radius = radius;
+    }
+
     double area(double side) {
         return side * side;
     }
@@ -20,7 +40,6 @@ class Shapes {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Shapes s = new Shapes();
         int choice;
 
         do {
@@ -36,30 +55,34 @@ class Shapes {
             switch (choice) {
                 case 1:
                     System.out.print("Enter side of Square: ");
-                    double side = sc.nextDouble();
-                    System.out.println("Area of Square = " + s.area(side));
+                    double s = sc.nextDouble();
+                    Shapes sq = new Shapes(s);
+                    System.out.println("Area of Square = " + sq.area(sq.side));
                     break;
 
                 case 2:
                     System.out.print("Enter length of Rectangle: ");
-                    double length = sc.nextDouble();
+                    double l = sc.nextDouble();
                     System.out.print("Enter breadth of Rectangle: ");
-                    double breadth = sc.nextDouble();
-                    System.out.println("Area of Rectangle = " + s.area(length, breadth));
+                    double b = sc.nextDouble();
+                    Shapes rect = new Shapes(l, b);
+                    System.out.println("Area of Rectangle = " + rect.area(rect.length, rect.breadth));
                     break;
 
                 case 3:
                     System.out.print("Enter base of Triangle: ");
-                    double base = sc.nextDouble();
+                    double bs = sc.nextDouble();
                     System.out.print("Enter height of Triangle: ");
-                    double height = sc.nextDouble();
-                    System.out.println("Area of Triangle = " + s.area(base, height, true));
+                    double h = sc.nextDouble();
+                    Shapes tri = new Shapes(bs, h, true);
+                    System.out.println("Area of Triangle = " + tri.area(tri.base, tri.height, true));
                     break;
 
                 case 4:
                     System.out.print("Enter radius of Circle: ");
-                    double radius = sc.nextDouble();
-                    System.out.printf("Area of Circle = %.2f%n", s.area(radius, true));
+                    double r = sc.nextDouble();
+                    Shapes cir = new Shapes(r, true);
+                    System.out.printf("Area of Circle = %.2f%n", cir.area(cir.radius, true));
                     break;
 
                 case 0:
