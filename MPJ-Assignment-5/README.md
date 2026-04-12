@@ -153,8 +153,6 @@ index.jsp
 
 ---
 
-## 📝 Theory
-
 ### 1. Servlet
 A Servlet is a Java class that handles HTTP requests and responses on the server side. It extends `HttpServlet` and overrides `doGet()` and `doPost()` methods to process client requests.
 
@@ -170,50 +168,6 @@ JDBC is a Java API that enables Java programs to interact with databases. It use
 
 ---
 
-## ❓ FAQ Answers
-
-**1. Difference between Servlet and JSP?**
-| Servlet | JSP |
-|---|---|
-| Java class with HTML inside | HTML page with Java inside |
-| More control over response | Easier to design UI |
-| Compiled manually | Auto-compiled by server |
-| Better for business logic | Better for presentation |
-
-**2. Advantages of JSP:**
-- Easy to maintain (separation of logic and UI)
-- Auto-compiled by the server
-- Supports custom tags and JSTL
-- Can reuse Java beans
-- Faster development of dynamic web pages
-
-**3. Difference between GET and POST:**
-| GET | POST |
-|---|---|
-| Data in URL | Data in request body |
-| Less secure | More secure |
-| Limited data size | No size limit |
-| Can be bookmarked | Cannot be bookmarked |
-| Used for fetching data | Used for submitting data |
-
-**4. GenericServlet vs HttpServlet:**
-| GenericServlet | HttpServlet |
-|---|---|
-| Protocol independent | HTTP specific |
-| Has `service()` method | Has `doGet()`, `doPost()` etc. |
-| Abstract class | Abstract class extending GenericServlet |
-| Less commonly used | Most widely used |
-
-**5. Major components of JDBC:**
-- **JDBC Driver** — Connects Java app to database
-- **Connection** — Session between Java and DB
-- **Statement / PreparedStatement** — Executes SQL
-- **ResultSet** — Holds query results
-- **DriverManager** — Manages JDBC drivers
-
----
-
-## ✅ Conclusion
 Successfully studied and implemented Servlets, JSP and database connectivity using JDBC with MySQL to build a complete Employee Registration Web Application.
 
 ---
